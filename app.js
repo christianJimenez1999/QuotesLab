@@ -7,10 +7,10 @@ app.set('view engine', 'ejs');
 /*configure mysql database*/
 /*configutr connection to connect to database*/
 const connection = mysql.createConnection({
-   host: 'localhost',
-   user: 'christian',
-   password: 'christian',
-   database: 'quotes_db'
+   host: 'un0jueuv2mam78uv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+   user: 'cvh7c80odxa3842y',
+   password: 'rdjpaec6bxtfpfeo',
+   database: 'kdeq32oratldp6w6'
 });
 
 connection.connect();
