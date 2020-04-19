@@ -1,0 +1,19 @@
+<%- include ('temp/header'); -%>
+<div class='container'>
+    <div class='jumbotron'>
+        <h1> Found Author </h1>
+        <div class='row'>
+            <div class='col-sm-4'></div>
+            <button class='col-sm-4 btn btn-info btn-block' onclick='location.href="/";'>Search</button>
+            <div class='col-sm-4'></div>
+        </div> 
+    </div>
+    
+    <h3> Quotes from author/authors </h3>
+    <ul>
+        <%quotes.forEach(function(q){%>
+            <li><%=q.quote%> - <a href='/author/<%=q.firstName%> <%=q.lastName%>'> <%=q.firstName%> <%=q.lastName%> </a></li>
+        <%});%>
+    </ul>
+</div>    
+<%- include ('temp/footer'); -%>
