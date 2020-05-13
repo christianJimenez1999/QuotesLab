@@ -16,7 +16,7 @@
         		<%authors.forEach(function(author){%>
             		<tr>
             			<td><%=author.firstName%> <%=author.lastName%></td>
-            			<td><a href='/author/<%=author.authorId%>/edit'>Edit</a> | <a href='/author/<%=author.authorId%>/delete'>Delete</a> </td></tr>
+            			<td><a href='/author/<%=author.authorId%>/edit'>Edit</a> | <a onclick="return confirm('Are you sure you want to delete this item?');"  href='/author/<%=author.authorId%>/delete'>Delete</a> </td></tr>
         		<%});%>
         	</table>
         <%}%>
